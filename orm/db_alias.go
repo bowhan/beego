@@ -424,6 +424,22 @@ func GetDB(aliasNames ...string) (*sql.DB, error) {
 	return nil, fmt.Errorf("DataBase of alias name `%s` not found", name)
 }
 
+// GetDBPointer Get **sql.DB from registered database by db alias name.
+// Use "default" as alias name if you not set.
+func GetDBPointer(aliasNames ...string) (**sql.DB, error) {
+	var name string
+	if len(aliasNames) > 0 {
+		name = aliasNames[0]
+	} else {
+		name = "default"
+	}
+	al, ok := dataBaseCache.get(name)
+	if ok {
+		return &al.DB, nil
+	}
+	return nil, fmt.Errorf("DataBase of alias name `%s` not found", name)
+}
+
 type stmtDecorator struct {
 	wg   sync.WaitGroup
 	stmt *sql.Stmt
