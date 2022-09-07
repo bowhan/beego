@@ -435,7 +435,7 @@ func GetDBPointer(aliasNames ...string) (**sql.DB, error) {
 	}
 	al, ok := dataBaseCache.get(name)
 	if ok {
-		return &al.DB, nil
+		return &al.DB.DB, nil
 	}
 	return nil, fmt.Errorf("DataBase of alias name `%s` not found", name)
 }
