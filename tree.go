@@ -19,8 +19,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/beego/beego/context"
-	"github.com/beego/beego/utils"
+	"github.com/bowhan/beego/context"
+	"github.com/bowhan/beego/utils"
 )
 
 var (
@@ -284,8 +284,8 @@ func (t *Tree) addseg(segments []string, route interface{}, wildcards []string, 
 
 // Match router to runObject & params
 func (t *Tree) Match(pattern string, ctx *context.Context) (runObject interface{}) {
-        // fix issue 4961, deal with "./ ../ //"
-        pattern = path.Clean(pattern)
+	// fix issue 4961, deal with "./ ../ //"
+	pattern = path.Clean(pattern)
 	if len(pattern) == 0 || pattern[0] != '/' {
 		return nil
 	}

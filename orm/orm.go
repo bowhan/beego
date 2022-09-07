@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//go:build go1.8
 // +build go1.8
 
 // Package orm provide ORM for MySQL/PostgreSQL/sqlite
@@ -21,7 +22,7 @@
 //
 //	import (
 //		"fmt"
-//		"github.com/beego/beego/orm"
+//		"github.com/bowhan/beego/orm"
 //		_ "github.com/go-sql-driver/mysql" // import your used driver
 //	)
 //

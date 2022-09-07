@@ -20,8 +20,8 @@
 //
 // Usage:
 //  import(
-//   _ "github.com/beego/beego/config/yaml"
-//     "github.com/beego/beego/config"
+//   _ "github.com/bowhan/beego/config/yaml"
+//     "github.com/bowhan/beego/config"
 //  )
 //
 //  cnf, err := config.NewConfig("yaml", "config.yaml")
@@ -40,7 +40,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/beego/beego/config"
+	"github.com/bowhan/beego/config"
 	"github.com/beego/goyaml2"
 )
 

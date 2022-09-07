@@ -15,8 +15,8 @@
 // Package auth provides handlers to enable basic auth support.
 // Simple Usage:
 //	import(
-//		"github.com/beego/beego"
-//		"github.com/beego/beego/plugins/auth"
+//		"github.com/bowhan/beego"
+//		"github.com/bowhan/beego/plugins/auth"
 //	)
 //
 //	func main(){
@@ -40,8 +40,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/beego/beego"
-	"github.com/beego/beego/context"
+	"github.com/bowhan/beego"
+	"github.com/bowhan/beego/context"
 )
 
 var defaultRealm = "Authorization Required"

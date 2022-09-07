@@ -18,7 +18,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/beego/beego/context"
+	"github.com/bowhan/beego/context"
 )
 
 type testinfo struct {

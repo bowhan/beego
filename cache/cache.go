@@ -16,7 +16,7 @@
 // Usage:
 //
 // import(
-//   "github.com/beego/beego/cache"
+//   "github.com/bowhan/beego/cache"
 // )
 //
 // bm, err := cache.NewCache("memory", `{"interval":60}`)

@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/beego/beego/testdata"
+	"github.com/bowhan/beego/testdata"
 	"github.com/elazarl/go-bindata-assetfs"
 )
 

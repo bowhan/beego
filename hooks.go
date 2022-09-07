@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/beego/beego/context"
-	"github.com/beego/beego/logs"
-	"github.com/beego/beego/session"
+	"github.com/bowhan/beego/context"
+	"github.com/bowhan/beego/logs"
+	"github.com/bowhan/beego/session"
 )
 
 // register MIME type with content type

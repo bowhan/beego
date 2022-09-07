@@ -27,8 +27,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/beego/beego/logs"
-	"github.com/beego/beego/utils"
+	"github.com/bowhan/beego/logs"
+	"github.com/bowhan/beego/utils"
 )
 
 var (
